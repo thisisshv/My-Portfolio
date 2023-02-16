@@ -78,9 +78,9 @@
 }
 
 .i-right>:nth-child(3){
-    transform: scale(1.18);
-    left: 23%;
-    top: 11.5%;
+    transform: scale(0.9);
+    left: 18%;
+    top: -17%;
 }
 
 .i-right>:nth-child(4){
@@ -115,13 +115,13 @@
 
 .blur2{
     position: absolute;
-    width: 21rem;
-    height: 11rem;
+    width: 22rem;
+    height: 14rem;
     border-radius: 50%;
     background: #c1f5ff;
     z-index: -9;
     top: 17rem;
     left: -4rem;
     top: 63%;
-    filter: blur(72px);
+    filter: blur(52px);
 }

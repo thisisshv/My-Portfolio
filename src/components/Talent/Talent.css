@@ -1,0 +1,87 @@
+.talent{
+    flex: 1;
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 2rem;
+    margin-top: 9rem;
+}
+
+.my-talents{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.my-talents>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.my-talents>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.my-talents>:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.t-button{
+    width: 12rem;
+    margin-top: 1rem;
+}
+
+.my-talents a{
+    width: 12rem;
+}
+
+.cards{
+    flex: 1;
+    position: relative;
+}
+
+.card1{
+    position: absolute;
+    left: 32rem;
+}
+
+.card2{
+    position: absolute;
+    top: 13rem;
+    left: 12rem;
+}
+
+.card3{
+    position: absolute;
+    top: 21rem;
+    left: 38rem;
+}
+
+.s-blur1{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #c1f5ff;
+    z-index: -9;
+    top: 8rem;
+    left: -4rem;
+    filter: blur(52px);
+}
+
+.s-blur2{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: var(--purple);
+    z-index: -9;
+    top: 12rem;
+    left: 20rem;
+    filter: blur(72px);
+}

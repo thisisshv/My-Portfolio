@@ -12,10 +12,10 @@ function Navbar() {
             <div className="n-list">
                 <ul>
                     <li>Home</li>
-                    <li>Services</li>
+                    <li>Talent</li>
                     <li>Experience</li>
-                    <li>Portfolio</li>
-                    <li>Testimonials</li>
+                    <li>Projects</li>
+                    <li>Achievements</li>
                 </ul>
             </div>
             <button className="button n-button">

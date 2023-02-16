@@ -5,7 +5,8 @@ import LinkedIn from '../../img/linkedin.png'
 import Instagram from '../../img/instagram.png'
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-import Boy from '../../img/boy.png'
+// import Boy from '../../img/boy.png'
+import MyPhoto from '../../img/my-photo.png'
 import Thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import Glassesemoji from '../../img/glassesemoji.png'
@@ -35,7 +36,7 @@ function Intro() {
       <div className="i-right">
         <img src={Vector1} alt="Graphics"/>
         <img src={Vector2} alt="Graphics"/>
-        <img src={Boy} alt="Graphics"/>
+        <img src={MyPhoto} alt=""/>
         <img src={Glassesemoji} alt=""/>
         <div className='fd1'>
             <FloatingDiv image={Crown} text1='Web' text2='Developer'/>
