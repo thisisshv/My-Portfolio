@@ -16,7 +16,7 @@ function Talent() {
             <a href={Resume} download>
                 <button className="button t-button">Download Resume</button>
             </a>
-            <div className="s-blur1"></div>
+            <div className="t-blur1"></div>
         </div>
 
         <div className="cards">
@@ -41,7 +41,7 @@ function Talent() {
                 details = {'ReactJS, SQL, Git'}
                 />
             </div>
-            <div className="s-blur2"></div>
+            <div className="t-blur2"></div>
         </div>
     </div>
   )

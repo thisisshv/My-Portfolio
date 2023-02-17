@@ -4,7 +4,7 @@
     display: flex;
     height: 90vh;
     margin-bottom: 2rem;
-    margin-top: 9rem;
+    margin-top: 4rem;
 }
 
 .my-talents{
@@ -62,7 +62,7 @@
     left: 38rem;
 }
 
-.s-blur1{
+.t-blur1{
     position: absolute;
     width: 22rem;
     height: 14rem;
@@ -74,7 +74,7 @@
     filter: blur(52px);
 }
 
-.s-blur2{
+.t-blur2{
     position: absolute;
     width: 22rem;
     height: 14rem;
