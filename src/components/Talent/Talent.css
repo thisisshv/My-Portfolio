@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    flex: 1;
 }
 
 .my-talents>:nth-child(1){
@@ -47,19 +48,19 @@
 
 .card1{
     position: absolute;
-    left: 32rem;
+    left: 23rem;
 }
 
 .card2{
     position: absolute;
     top: 13rem;
-    left: 12rem;
+    left: 5rem;
 }
 
 .card3{
     position: absolute;
     top: 21rem;
-    left: 38rem;
+    left: 28rem;
 }
 
 .t-blur1{

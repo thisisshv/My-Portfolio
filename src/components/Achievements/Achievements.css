@@ -1,0 +1,90 @@
+.a-wrapper{
+    padding: 0 3rem 0 3rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7rem;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.a-heading{
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.a-heading>*{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.a-heading span:nth-child(2){
+    color: var(--orange);
+}
+
+.a-blur1{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: var(--purple);
+    z-index: -9;
+    top: 16rem;
+    left: 55rem;
+    filter: blur(52px);
+}
+
+.a-blur2{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #c1f5ff;
+    z-index: -9;
+    top: 9rem;
+    left: 0rem;
+    filter: blur(72px);
+}
+
+.achievements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 30rem;
+    height: 16rem;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--blueCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+}
+
+.achievements>img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+
+.achievements>span{
+    color: var(--gray);
+}
+
+.a-wrapper .swiper{
+    width: 100%;
+    height: 70%;
+}
+
+.a-wrapper .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-wrapper .swiper-pagination-bullet-active{
+    background: var(--orange);
+}

@@ -55,3 +55,21 @@
     font-weight: bold;
     margin-top: 0.5rem;
 }
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.heading span:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.heading span:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}

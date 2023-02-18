@@ -3,6 +3,11 @@ import './Experience.css'
 
 function Experience() {
   return (
+    <>
+    <div className="heading">
+        <span>Experience</span>
+        <span>& Education</span>
+    </div>
     <div className="experience">
         <div className="knowledge">
             <div className="circle fresherCircle">Fresher</div>
@@ -25,6 +30,7 @@ function Experience() {
             <span>Chapra Central School, Chapra, Bihar</span>
         </div>
     </div>
+    </>
   )
 }
 

@@ -42,7 +42,7 @@ function Intro() {
             <FloatingDiv image={Crown} text1='Web' text2='Developer'/>
         </div>
         <div className='fd2'>
-            <FloatingDiv image={Thumbup} text1='Best Design' text2='Award'/>
+            <FloatingDiv image={Thumbup} text1='Best' text2='Design'/>
         </div>
         {/* Blur Divs */}
         <div className="blur1"></div>

@@ -3,8 +3,10 @@ import "./App.css"
 import Intro from "./components/Intro/Intro";
 import Talent from "./components/Talent/Talent";
 import Experience from "./components/Experience/Experience";
-// import Projects from "./components/Projects/Projects";
-import Dummy from "./components/Dummy/Dummy";
+import Projects from "./components/Projects/Projects";
+import Achievements from "./components/Achievements/Achievements";
+import Contact from "./components/Contact/Contact";
+// import Dummy from "./components/Dummy/Dummy";
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       <Talent/>
       <Experience/>
       {/* <Dummy/> */}
-      {/* <Projects/> */}
+      <Projects/>
+      <Achievements/>
+      <Contact/>
     </div>
   );
 }
