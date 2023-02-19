@@ -6,6 +6,7 @@ import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Achievements from "./components/Achievements/Achievements";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 // import Dummy from "./components/Dummy/Dummy";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Projects/>
       <Achievements/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
