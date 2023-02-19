@@ -61,3 +61,8 @@ textarea{
     left: 15rem;
     filter: blur(72px);
 }
+
+.c-button{
+    width: 12rem;
+    margin-top: 1rem;
+}

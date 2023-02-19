@@ -5,19 +5,22 @@ import LinkedIn from '../../img/linkedin.png'
 import Instagram from '../../img/instagram.png'
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-// import Boy from '../../img/boy.png'
 import MyPhoto from '../../img/my-photo.png'
 import Thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import Glassesemoji from '../../img/glassesemoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import { themeContext } from '../../Context'
+import { useContext } from 'react'
 
 function Intro() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className='intro'>
       <div className="i-left">
         <div className="i-name">
-            <span>Hi, I Am</span>
+            <span style={{color: darkMode? 'white': ''}}>Hi, I Am</span>
             <span>Shivanshu Kumar</span>
             <span>About me Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo itaque ab beatae? Saepe, nesciunt! Expedita provident laborum quaerat eum accusamus cumque in, nihil, iusto id, nulla velit unde doloribus.</span>
         </div>

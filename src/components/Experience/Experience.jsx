@@ -1,16 +1,20 @@
 import React from 'react'
 import './Experience.css'
+import { themeContext } from '../../Context'
+import { useContext } from 'react'
 
 function Experience() {
-  return (
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+    return (
     <>
     <div className="heading">
-        <span>Experience</span>
+        <span style={{color: darkMode? 'white': ''}}>Experience</span>
         <span>& Education</span>
     </div>
     <div className="experience">
         <div className="knowledge">
-            <div className="circle fresherCircle">Fresher</div>
+            <div className="circle fresherCircle" >Fresher</div>
             <span>Industry</span>
             <span>Experience</span>
         </div>
@@ -31,7 +35,7 @@ function Experience() {
         </div>
     </div>
     </>
-  )
+    )
 }
 
 export default Experience

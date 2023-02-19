@@ -8,8 +8,12 @@ import profilePic1 from '../../img/profile1.jpg'
 import profilePic2 from '../../img/profile2.jpg'
 import profilePic3 from '../../img/profile3.jpg'
 import profilePic4 from '../../img/profile4.jpg'
+import { themeContext } from '../../Context'
+import { useContext } from 'react'
 
 function Achievements() {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
     const achievements=[
         {
             img: profilePic1,
@@ -31,7 +35,7 @@ function Achievements() {
   return (
     <>
     <div className="a-heading">
-        <span>My</span>
+        <span style={{color: darkMode? 'white': ''}}>My</span>
         <span>Achievements</span>
     </div>
     <div className="a-wrapper">

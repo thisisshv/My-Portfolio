@@ -5,12 +5,16 @@ import Fiverr from '../../img/fiverr.png'
 import Amazon from '../../img/amazon.png'
 import Shopify from '../../img/Shopify.png'
 import Facebook from '../../img/Facebook.png'
+import { themeContext } from '../../Context'
+import { useContext } from 'react'
 
 function Dummy() {
-  return (
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+    return (
     <div className="dummy">
-      <div className="dummy1">
-            <span>Aim to work for all these</span>
+        <div className="dummy1">
+            <span style={{color: darkMode? 'white': ''}}>Aim to work for all these</span>
             <span>Companies</span>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempora,<br/>at odio vitae aperiam teneturaliquam molestiae numquam cumque recusandae<br/>dolores obcaecati vero deserunt laudantium, a quibusdam culpa non quisquam?</span>
             <button className="button d-button">Hire Me</button>
@@ -38,7 +42,7 @@ function Dummy() {
             <div className="backCircle yellowCircle"></div>
         </div>
     </div>
-  )
+    )
 }
 
 export default Dummy
