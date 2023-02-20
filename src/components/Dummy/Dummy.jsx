@@ -7,6 +7,7 @@ import Shopify from '../../img/Shopify.png'
 import Facebook from '../../img/Facebook.png'
 import { themeContext } from '../../Context'
 import { useContext } from 'react'
+import { motion } from 'framer-motion'
 
 function Dummy() {
     const theme = useContext(themeContext);
@@ -21,7 +22,12 @@ function Dummy() {
             <div className="d-blur"></div>
         </div>
         <div className="dummy2">
-            <div className="mainCircle">
+            <motion.div
+            initial={{rotate: 45}}
+            whileInView={{rotate: 0}}
+            viewport={{margin: '-40px'}}
+            transition={{duration: 3.5, type: 'spring'}}
+            className="mainCircle">
                 <div className="secCircle">
                     <img src={Upwork} alt="Upwork Icon" />
                 </div>
@@ -37,7 +43,7 @@ function Dummy() {
                 <div className="secCircle">
                     <img src={Facebook} alt="Facebook Icon" />
                 </div>
-            </div>
+            </motion.div>
             <div className="backCircle blueCircle"></div>
             <div className="backCircle yellowCircle"></div>
         </div>

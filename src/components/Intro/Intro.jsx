@@ -12,8 +12,12 @@ import Glassesemoji from '../../img/glassesemoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import { themeContext } from '../../Context'
 import { useContext } from 'react'
+import { motion } from 'framer-motion'
 
 function Intro() {
+
+  const transition = {duration: 2, type: 'spring'}
+
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -40,13 +44,25 @@ function Intro() {
         <img src={Vector1} alt="Graphics"/>
         <img src={Vector2} alt="Graphics"/>
         <img src={MyPhoto} alt=""/>
-        <img src={Glassesemoji} alt=""/>
-        <div className='fd1'>
+        <motion.img
+        initial={{left: '-36%'}}
+        whileInView={{left: '-24%'}}
+        transition={transition}
+        src={Glassesemoji} alt=""/>
+        <motion.div
+        initial={{top: '4%', left: '74%'}}
+        whileInView={{left: '68%'}}
+        transition={transition}
+        className='fd1'>
             <FloatingDiv image={Crown} text1='Web' text2='Developer'/>
-        </div>
-        <div className='fd2'>
+        </motion.div>
+        <motion.div
+        initial={{left: '9rem'}}
+        whileInView={{left: '0rem'}}
+        transition={transition}
+        className='fd2'>
             <FloatingDiv image={Thumbup} text1='Best' text2='Design'/>
-        </div>
+        </motion.div>
         {/* Blur Divs */}
         <div className="blur1"></div>
         <div className="blur2"></div>
