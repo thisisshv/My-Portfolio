@@ -26,7 +26,7 @@ function Contact() {
     };
 
     return (
-    <div className="contact-form">
+    <div className="contact-form" id='Contact'>
         <div className="c-left">
             <div className="my-talents">
                 <span style={{color: darkMode? 'white': ''}}>Get in touch</span>

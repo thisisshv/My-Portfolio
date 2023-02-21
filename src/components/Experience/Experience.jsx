@@ -8,7 +8,7 @@ function Experience() {
     const darkMode = theme.state.darkMode;
     return (
     <>
-    <div className="heading">
+    <div className="heading" id='Experience'>
         <span style={{color: darkMode? 'white': ''}}>Experience</span>
         <span>& Education</span>
     </div>

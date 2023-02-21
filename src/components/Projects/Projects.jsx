@@ -13,12 +13,12 @@ function Projects() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-      <div className="projects">
+      <div className="projects" id='Projects'>
         <span style={{color: darkMode? 'white': ''}}>My</span>
         <span>Projects</span>
         <Swiper
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={2.5}
         grabCursor={true}
         className='projects-slider'
         >

@@ -40,6 +40,12 @@
     color: var(--orange);
 }
 
-.n-button{
-    
+@media screen and (max-width: 480px) {
+    .n-list{
+        display: none;
+    }
+    .n-button{
+        width: 7rem;
+        margin-left: 3rem;
+    }
 }

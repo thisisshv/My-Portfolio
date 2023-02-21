@@ -86,3 +86,21 @@
     left: 20rem;
     filter: blur(72px);
 }
+
+@media screen and (max-width: 480px) {
+    .talent{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 82rem;
+        padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+    }
+    .cards>*{
+        position: static;
+    }
+}

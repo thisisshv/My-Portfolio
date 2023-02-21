@@ -16,7 +16,7 @@ function Talent() {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     return (
-        <div className="talent">
+        <div className="talent" id='Talent'>
             <div className="my-talents">
                 <span style={{color: darkMode? 'white': ''}}>My</span>
                 <span>Talents</span>

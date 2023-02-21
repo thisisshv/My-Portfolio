@@ -88,3 +88,13 @@
 .a-wrapper .swiper-pagination-bullet-active{
     background: var(--orange);
 }
+
+@media screen and (max-width: 480px) {
+    .a-wrapper{
+        height: 35rem;
+    }
+    .a-wrapper .swiper{
+        width: 180%;
+        left: -6.5rem;
+    }
+}

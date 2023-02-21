@@ -130,3 +130,26 @@
     left: 18rem;
     top: 8rem;
 }
+
+@media screen and (max-width: 480px) {
+    .dummy{
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        gap: 5rem;
+        margin-top: 5rem;
+        margin-bottom: -6rem;
+    }
+    .dummy2{
+        display: flex;
+        align-items: start;
+        transform: scale(0.8);
+        left: 0rem;
+    }
+    .mainCircle{
+        position: static;
+    }
+    .backCircle{
+        left: 10rem !important;
+    }
+}

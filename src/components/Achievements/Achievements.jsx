@@ -34,7 +34,7 @@ function Achievements() {
     ]
   return (
     <>
-    <div className="a-heading">
+    <div className="a-heading" id='Achievements'>
         <span style={{color: darkMode? 'white': ''}}>My</span>
         <span>Achievements</span>
     </div>

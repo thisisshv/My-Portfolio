@@ -125,3 +125,21 @@
     top: 63%;
     filter: blur(52px);
 }
+
+@media screen and (max-width: 480px) {
+    .intro{
+        flex-direction: column;
+        height: 70rem;
+        gap: 7rem;
+    }
+    .i-right{
+        transform: scale(0.8);
+        left: -3rem;
+    }
+    .fd1{
+        top: -8rem !important;
+    }
+    .blur1{
+        left: 13rem;
+    }
+}
