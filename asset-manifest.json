@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.39ba6dbf.css",
+    "main.js": "/My-Portfolio/static/js/main.24f83005.js",
+    "static/media/my-photo.png": "/My-Portfolio/static/media/my-photo.1110a09f16071cd3603a.png",
+    "static/media/Spotify Clone.jpg": "/My-Portfolio/static/media/Spotify Clone.74e3a03c359bb560f2fa.jpg",
+    "static/media/Chatmate.jpg": "/My-Portfolio/static/media/Chatmate.fa9787c149390f948f2c.jpg",
+    "static/media/Alarm clock app.jpg": "/My-Portfolio/static/media/Alarm clock app.5b09c26a3fa7e8409dfa.jpg",
+    "static/media/Brick-Breaker-Game.jpg": "/My-Portfolio/static/media/Brick-Breaker-Game.20428c3a91636e4306e0.jpg",
+    "static/media/glassesemoji.png": "/My-Portfolio/static/media/glassesemoji.a08bdab12e8eb56a6874.png",
+    "static/media/Resume.pdf": "/My-Portfolio/static/media/Resume.ebc43f0e29a0667686eb.pdf",
+    "static/media/Uni of Leeds.jpg": "/My-Portfolio/static/media/Uni of Leeds.48757351fba84cc5bfa3.jpg",
+    "static/media/Udemy Bootcamp.jpg": "/My-Portfolio/static/media/Udemy Bootcamp.a806ad02dba706040a0c.jpg",
+    "static/media/wave.png": "/My-Portfolio/static/media/wave.fdfef4069ad90f610990.png",
+    "static/media/Hackerrank - Java.jpg": "/My-Portfolio/static/media/Hackerrank - Java.3ec244f9cc5a7f8de3ab.jpg",
+    "static/media/Vector2.png": "/My-Portfolio/static/media/Vector2.28db5bfd58081dd1df1b.png",
+    "static/media/Hackerrank - Python.jpg": "/My-Portfolio/static/media/Hackerrank - Python.1157937e1515351d3d25.jpg",
+    "static/media/Hackerrank - C++.jpg": "/My-Portfolio/static/media/Hackerrank - C++.89b1fc43b27ee3e0a6f5.jpg",
+    "index.html": "/My-Portfolio/index.html",
+    "main.39ba6dbf.css.map": "/My-Portfolio/static/css/main.39ba6dbf.css.map",
+    "main.24f83005.js.map": "/My-Portfolio/static/js/main.24f83005.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39ba6dbf.css",
+    "static/js/main.24f83005.js"
+  ]
+}
