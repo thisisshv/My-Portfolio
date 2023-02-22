@@ -12,6 +12,11 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.knowledge:hover{
+    scale: 1.3;
 }
 
 .circle{

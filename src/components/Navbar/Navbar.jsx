@@ -1,10 +1,14 @@
 import React from 'react'
 import Toggle from '../Toggle/Toggle'
 import './Navbar.css'
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
+import { themeContext } from '../../Context'
+import { useContext } from 'react'
 
 function Navbar() {
-  return (
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+    return (
     <div className="n-wrapper">
         <div className="n-left">
             <div className="n-name">Shivanshu</div>
@@ -14,19 +18,19 @@ function Navbar() {
             <div className="n-list">
                 <ul>
                     <Link spy={true} to='Navbar' smooth={true} activeClass='activeClass'>
-                        <li>Home</li>
+                        <li style={{color: darkMode? 'white': ''}}>Home</li>
                     </Link>
                     <Link spy={true} to='Talent' smooth={true}>
-                        <li>Talent</li>
+                        <li style={{color: darkMode? 'white': ''}}>Talent</li>
                     </Link>
                     <Link spy={true} to='Experience' smooth={true}>
-                        <li>Experience</li>
+                        <li style={{color: darkMode? 'white': ''}}>Experience</li>
                     </Link>
                     <Link spy={true} to='Projects' smooth={true}>
-                        <li>Projects</li>
+                        <li style={{color: darkMode? 'white': ''}}>Projects</li>
                     </Link>
                     <Link spy={true} to='Achievements' smooth={true}>
-                        <li>Achievements</li>
+                        <li style={{color: darkMode? 'white': ''}}>Achievements</li>
                     </Link>
                 </ul>
             </div>
@@ -37,7 +41,7 @@ function Navbar() {
             </Link>
         </div>
     </div>
-  )
+    )
 }
 
 export default Navbar

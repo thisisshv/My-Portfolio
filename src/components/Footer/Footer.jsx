@@ -10,12 +10,18 @@ function Footer() {
     <div className="footer">
         <img className='f-img' src={Wave} alt="" style={{width: '100%'}}/>
         <div className="f-content">
-            <span>shv.shivanshu@gmail.com</span>
-            <div className="f-icons">
-                <Insta color='white' size='3rem'/>
-                <LinkedIn color='white' size='3rem'/>
-                <Github color='white' size='3rem'/>
-            </div>
+          <a href = "mailto: shv.shivanshu@gmail.com" color='black'>shv.shivanshu@gmail.com</a>
+          <div className="f-icons">
+            <a href="https://www.linkedin.com/in/shivanshu-kumar-a0b5bb209/" target="_blank">
+              <LinkedIn color='white' size='3rem'/>
+            </a>
+            <a href="https://github.com/thisisshv" target="_blank">
+              <Github color='white' size='3rem'/>
+            </a>
+            <a href="https://instagram.com/thisisshivanshu?igshid=YmJhNjkzNzY=" target="_blank">
+              <Insta color='white' size='3rem'/>
+            </a>
+          </div>
         </div>
     </div>
   )

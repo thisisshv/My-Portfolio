@@ -7,7 +7,6 @@ import Projects from "./components/Projects/Projects";
 import Achievements from "./components/Achievements/Achievements";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-// import Dummy from "./components/Dummy/Dummy";
 import { themeContext } from "./Context";
 import { useContext } from "react";
 
@@ -26,7 +25,6 @@ function App() {
       <Intro/>
       <Talent/>
       <Experience/>
-      {/* <Dummy/> */}
       <Projects/>
       <Achievements/>
       <Contact/>

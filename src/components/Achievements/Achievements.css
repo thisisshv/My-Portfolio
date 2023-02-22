@@ -33,8 +33,8 @@
     border-radius: 50%;
     background: var(--purple);
     z-index: -9;
-    top: 16rem;
-    left: 55rem;
+    top: 15rem;
+    left: 70rem;
     filter: blur(52px);
 }
 
@@ -45,8 +45,8 @@
     border-radius: 50%;
     background: #c1f5ff;
     z-index: -9;
-    top: 9rem;
-    left: 0rem;
+    top: 15rem;
+    left: -5rem;
     filter: blur(72px);
 }
 
@@ -65,13 +65,15 @@
 }
 
 .achievements>img{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 100%;
+    width: 14rem;
+    border-color: black;
+    border: black solid 2px;
 }
 
 .achievements>span{
     color: var(--gray);
+    margin-top: 1.5rem;
+    text-align: center;
 }
 
 .a-wrapper .swiper{

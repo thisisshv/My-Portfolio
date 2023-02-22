@@ -19,9 +19,31 @@
     margin-top: 11rem;
 }
 
+.f-content a:nth-child(1){
+    color: white;
+    scale: 1.2;
+    transition: all 0.25s ease-in-out;
+}
+
+.f-content a:hover{
+    scale: 1.4;
+}
+
 .f-icons{
     display: flex;
     gap: 2rem;
+}
+
+.f-icons a:nth-child(1){
+    scale: 1;
+}
+
+.f-icons>*{
+    transition: all 0.25s ease-in-out;
+}
+
+.f-icons a:hover{
+    scale: 1.2;
 }
 
 @media screen and (max-width: 480px) {

@@ -18,6 +18,7 @@
 }
 
 .button{
+  transition: all 0.25s ease-in-out;
   border-radius: 34px;
   border: none;
   color: white;
@@ -32,6 +33,7 @@
   cursor: pointer;
   color: var(--orange);
   border: 1px solid var(--orange);
+  scale: 1.1;
 }
 
 @media screen and (max-width: 480px) {

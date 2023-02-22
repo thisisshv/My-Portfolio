@@ -1,13 +1,15 @@
 import React from 'react'
 import './Achievements.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { Pagination } from 'swiper'
+import { Pagination, Navigation } from 'swiper'
 import 'swiper/css'
+import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import profilePic1 from '../../img/profile1.jpg'
-import profilePic2 from '../../img/profile2.jpg'
-import profilePic3 from '../../img/profile3.jpg'
-import profilePic4 from '../../img/profile4.jpg'
+import UdemyBootcamp from '../../img/Udemy Bootcamp.jpg'
+import HackerrankJava from '../../img/Hackerrank - Java.jpg'
+import HackerrankCpp from '../../img/Hackerrank - C++.jpg'
+import HackerrankPython from '../../img/Hackerrank - Python.jpg'
+import UniOfLeeds from '../../img/Uni of Leeds.jpg'
 import { themeContext } from '../../Context'
 import { useContext } from 'react'
 
@@ -16,52 +18,58 @@ function Achievements() {
     const darkMode = theme.state.darkMode;
     const achievements=[
         {
-            img: profilePic1,
-            details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dicta soluta non quaerat perspiciatis deserunt natus labore animi doloribus enim, sunt voluptatum earum esse hic quae beatae quod quis porro?"
+            img: UdemyBootcamp,
+            details: "Certified with The Web Developer Bootcamp 2022 by Udemy"
         },
         {
-            img: profilePic2,
-            details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dicta soluta non quaerat perspiciatis deserunt natus labore animi doloribus enim, sunt voluptatum earum esse hic quae beatae quod quis porro?"
+            img: HackerrankJava,
+            details: "Have a Java Gold Badge on Hackerrank"
         },
         {
-            img: profilePic3,
-            details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dicta soluta non quaerat perspiciatis deserunt natus labore animi doloribus enim, sunt voluptatum earum esse hic quae beatae quod quis porro?"
+            img: HackerrankCpp,
+            details: "Have a C++ Gold Badge on Hackerrank"
         },
         {
-            img: profilePic4,
-            details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dicta soluta non quaerat perspiciatis deserunt natus labore animi doloribus enim, sunt voluptatum earum esse hic quae beatae quod quis porro?"
+            img: HackerrankPython,
+            details: "Have a Python Bronze Badge on Hackerrank"
+        },
+        {
+            img: UniOfLeeds,
+            details: "Certified with Communication and Interpersonal Skills at Work by University of Leeds and Institute of Coding"
         }
     ]
-  return (
-    <>
-    <div className="a-heading" id='Achievements'>
-        <span style={{color: darkMode? 'white': ''}}>My</span>
-        <span>Achievements</span>
-    </div>
-    <div className="a-wrapper">
-        <div className="a-blur1"></div>
-        <div className="a-blur2"></div>
+    return (
+        <>
+        <div className="a-heading" id='Achievements'>
+            <span style={{color: darkMode? 'white': ''}}>My</span>
+            <span>Achievements</span>
+        </div>
+        <div className="a-wrapper">
+            <div className="a-blur1"></div>
+            <div className="a-blur2"></div>
 
-        <Swiper
-        modules={[Pagination]}
-        slidesPerView={1}
-        pagination={{clickable:true}}
-        grabCursor={true}
-        >
-            {achievements.map((achievements, index)=>{
-                return(
-                    <SwiperSlide key={index}>
-                        <div className="achievements">
-                            <img src={achievements.img} alt="" />
-                            <span>{achievements.details}</span>
-                        </div>
-                    </SwiperSlide>
-                )
-            })}
-        </Swiper>
-    </div>
-    </>
-  )
+            <Swiper
+            modules={[Pagination, Navigation]}
+            navigation
+            loop
+            pagination={{clickable:true}}
+            slidesPerView={1}
+            grabCursor={true}
+            >
+                {achievements.map((achievements, index)=>{
+                    return(
+                        <SwiperSlide key={index}>
+                            <div className="achievements">
+                                <img src={achievements.img} alt="" />
+                                <span>{achievements.details}</span>
+                            </div>
+                        </SwiperSlide>
+                    )
+                })}
+            </Swiper>
+        </div>
+        </>
+    )
 }
 
 export default Achievements

@@ -1,8 +1,8 @@
 import React from 'react'
 import './Talent.css'
-import HeartEmoji from '../../img/heartemoji.png'
-import Glasses from '../../img/glasses.png'
-import Humble from '../../img/humble.png'
+import Coding from '../../img/coding.png'
+import WebDev from '../../img/web-dev.png'
+import Tools from '../../img/tools.png'
 import Card from '../Card/Card'
 import Resume from './Resume.pdf'
 import { themeContext } from '../../Context'
@@ -20,7 +20,16 @@ function Talent() {
             <div className="my-talents">
                 <span style={{color: darkMode? 'white': ''}}>My</span>
                 <span>Talents</span>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempora,<br/>at odio vitae aperiam teneturaliquam molestiae numquam cumque recusandae<br/>dolores obcaecati vero deserunt laudantium, a quibusdam culpa non quisquam?</span>
+                <span className="line1" style={{color: darkMode? 'white': ''}}>I am well versed with languages like:</span>
+                <span className="line2">Java, Python, HTML, CSS, JavaScript</span>
+                <span className="line1" style={{color: darkMode? 'white': ''}}>Databases are important, so,</span>
+                <span className="line2">MySQL, MongoDB</span>
+                <span className="line1" style={{color: darkMode? 'white': ''}}>Talking about frameworks, I am familiar with</span>
+                <span className="line2">ReactJS, NodeJS, Django</span>
+                <span className="line1" style={{color: darkMode? 'white': ''}}>Tools?</span>
+                <span className="line2">Git, JQuery, Canva</span>
+                <span className="line1" style={{color: darkMode? 'white': ''}}>What also I am interested in?</span>
+                <span className="line2">Ethical hacking !</span>
                 <a href={Resume} download>
                     <button className="button t-button">Download Resume</button>
                 </a>
@@ -34,9 +43,9 @@ function Talent() {
                 transition={transition}
                 className="card1">
                     <Card
-                    emoji = {HeartEmoji}
+                    pic = {Coding}
                     heading = {'Coding'}
-                    details = {'Java, Python'}
+                    details = {'Java, Python, MySQL, JavaScript'}
                     />
                 </motion.div>
                 <motion.div
@@ -45,9 +54,9 @@ function Talent() {
                 transition={transition}
                 className="card2">
                     <Card
-                    emoji = {Glasses}
-                    heading = {'Development'}
-                    details = {'HTML, CSS, JavaScript'}
+                    pic = {WebDev}
+                    heading = {'Web Development'}
+                    details = {'HTML, CSS, ReactJS, NodeJS'}
                     />
                 </motion.div>
                 <motion.div
@@ -56,9 +65,9 @@ function Talent() {
                 transition={transition}
                 className="card3">
                     <Card
-                    emoji = {Humble}
-                    heading = {'Tools & Frameworks'}
-                    details = {'ReactJS, SQL, Git'}
+                    pic = {Tools}
+                    heading = {'Tools'}
+                    details = {'Git, JQuery, Canva'}
                     />
                 </motion.div>
                 <div className="t-blur2"></div>

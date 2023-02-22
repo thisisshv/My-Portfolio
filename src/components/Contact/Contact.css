@@ -1,8 +1,9 @@
 .contact-form{
     padding: 0 3rem 0 3rem;
     display: flex;
-    height: 65vh;
+    height: 75vh;
     padding-top: 1rem;
+    margin-bottom: 5rem;
 }
 
 .c-left{
@@ -37,7 +38,15 @@
 }
 
 textarea{
-    height: 4rem!important;
+    height: 6rem !important;
+}
+
+.feedback{
+    height: 4rem !important;
+}
+
+.c-button{
+    width: 6rem;
 }
 
 .c-blur1{
@@ -57,14 +66,9 @@ textarea{
     border-radius: 50%;
     background: var(--purple);
     z-index: -9;
-    top: 15rem;
-    left: 15rem;
+    top: 22rem;
+    left: 13rem;
     filter: blur(72px);
-}
-
-.c-button{
-    width: 12rem;
-    margin-top: 1rem;
 }
 
 @media screen and (max-width: 480px) {

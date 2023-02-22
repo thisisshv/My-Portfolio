@@ -40,7 +40,8 @@ function Contact() {
                 <input type="email" name="user_email" className="user" placeholder=" Email" required/>
                 <input type="number" name="user_number" className="user" placeholder=" Phone Number" required/>
                 <textarea name="message" className="user" placeholder=" Message" required/>
-                <input type="submit" value="Send" className="button"/>
+                <textarea name="feedback" className="user feedback" placeholder=" Any Feedback?" required/>
+                <input type="submit" value="Send" className="button c-button"/>
                 <span>{done && "Thanks for contacting me!"}</span>
                 <div className="c-blur2"></div>
             </form>

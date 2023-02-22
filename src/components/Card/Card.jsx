@@ -1,13 +1,12 @@
 import React from 'react'
 import './Card.css'
 
-function Card({emoji, heading, details}) {
+function Card({pic, heading, details}) {
   return (
     <div className="card">
-        <img src={emoji} alt="Heart Emoji"/>
+        <img src={pic} alt=""/>
         <span>{heading}</span>
         <span>{details}</span>
-        <button className="cardButton">Learn More</button>
     </div>
   )
 }

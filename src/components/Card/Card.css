@@ -12,16 +12,27 @@
     box-shadow: var(--boxShadow);
     border-radius: 20px;
     padding: 0px 26px 2rem 26px;
+    transition: all 0.25s ease-in-out;
+}
+
+.card:hover{
+    cursor: pointer;
+    scale: 1.1;
 }
 
 .card span:nth-child(2){
-    color: var(--gray);
+    color: var(--orange);
     font-size: 16px;
+}
+
+.card span:nth-child(3){
+    size: 10px;
 }
 
 .card>img{
     transform: scale(0.6);
-    margin-bottom: -2rem;
+    margin: 1rem 0rem 0rem 0rem;
+    flex-direction: column;
 }
 
 .cardButton{
